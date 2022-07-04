@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2BC65A892872BBCC00503019 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC65A882872BBCC00503019 /* main.swift */; };
+		2BC65A902872F72700503019 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC65A8F2872F72700503019 /* Weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		2BC65A852872BBCC00503019 /* weatherrate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = weatherrate; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC65A882872BBCC00503019 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2BC65A8F2872F72700503019 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				2BC65A882872BBCC00503019 /* main.swift */,
+				2BC65A8F2872F72700503019 /* Weather.swift */,
 			);
 			path = weatherrate;
 			sourceTree = "<group>";
@@ -120,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BC65A902872F72700503019 /* Weather.swift in Sources */,
 				2BC65A892872BBCC00503019 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
