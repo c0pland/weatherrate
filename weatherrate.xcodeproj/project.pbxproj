@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2BC65A892872BBCC00503019 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC65A882872BBCC00503019 /* main.swift */; };
 		2BC65A902872F72700503019 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC65A8F2872F72700503019 /* Weather.swift */; };
+		2BE620B92873F4A900360A18 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 2BE620B82873F4A900360A18 /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BE620B92873F4A900360A18 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +83,9 @@
 			dependencies = (
 			);
 			name = weatherrate;
+			packageProductDependencies = (
+				2BE620B82873F4A900360A18 /* SwiftyJSON */,
+			);
 			productName = weatherrate;
 			productReference = 2BC65A852872BBCC00503019 /* weatherrate */;
 			productType = "com.apple.product-type.tool";
@@ -109,6 +114,9 @@
 				Base,
 			);
 			mainGroup = 2BC65A7C2872BBCC00503019;
+			packageReferences = (
+				2BE620B72873F4A900360A18 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 2BC65A862872BBCC00503019 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -288,6 +296,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2BE620B72873F4A900360A18 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2BE620B82873F4A900360A18 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BE620B72873F4A900360A18 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2BC65A7D2872BBCC00503019 /* Project object */;
 }

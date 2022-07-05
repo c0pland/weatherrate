@@ -15,7 +15,7 @@ let yandexWeatherAPI = "9e00be46-53d1-4caa-b0be-f618bfa6cac1"
 let weather = Weather()
 while !weather.finished {
     if !weather.apiLaunched {
-        weather.getTemp(for: "Tulsa")
+        weather.getTemp(for: "Novosibirsk")
         weather.apiLaunched = true
     }
 }
