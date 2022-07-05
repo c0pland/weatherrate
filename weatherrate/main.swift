@@ -7,15 +7,25 @@
 
 import Foundation
 
-let yandexWeatherAPI = "9e00be46-53d1-4caa-b0be-f618bfa6cac1"
-//for arg in CommandLine.arguments {
-//    print(arg)
-//}
-
 let weather = Weather()
+var location = ""
+if CommandLine.arguments.count <= 1 {
+    print("Provide a location (e.g. weatherrate Novosivirsk).")
+    weather.finished = true
+} else {
+    for arg in CommandLine.arguments {
+        if CommandLine.arguments[0] == arg {
+            continue
+        }
+        location += arg + " "
+    }
+}
+location = location.trimmingCharacters(in: .whitespacesAndNewlines)
+print("Location: \(location)")
+
 while !weather.finished {
     if !weather.apiLaunched {
-        weather.getTemp(for: "Novosibirsk")
+        weather.getTemp(for: location)
         weather.apiLaunched = true
     }
 }
