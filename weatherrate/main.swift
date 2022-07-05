@@ -21,8 +21,6 @@ if CommandLine.arguments.count <= 1 {
     }
 }
 location = location.trimmingCharacters(in: .whitespacesAndNewlines)
-print("Location: \(location)")
-
 while !weather.finished {
     if !weather.apiLaunched {
         weather.getTemp(for: location)
